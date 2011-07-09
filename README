@@ -1,0 +1,46 @@
+## PROSSIME IMPLEMENTAZIONI
+-- Miglioramento dell'interfaccia
+-- Creazione del database per la corretta rappresentazione di:
+   --- Film
+   --- Serie
+
+-- Implementazione di Yii - http://www.yiiframework.com/
+   PHP Framework
+
+-- Funzione di estrazione dati da IMDB
+   Ho già visto varie classi che fanno questo.
+   Fondamentalmente volevo creare un sistema (Ajax based) che mi permetta di ricevere tutte le informazioni di un film,
+   passando come parametro esclusivamente il titolo.
+
+
+-- Funzione Cache Video (EigeNet)
+   Questa funzione riguarda solo ed esclusivamente EigeNet, e prevede un sistema di cache di video da: Megavideo, YouTube...
+   In caso il video si già presente nella nostra cache, mostriamo il video in intranet, altrimenti restituiamo nuovamente il
+   filmato da Megavideo o YouTube...
+   Per questa parte è necessaria creare un server dns che dirotti tutto il traffico megavideo.com & youtube.com su una nostra
+   pagina che si occuperà di scaricare il file richiesto e restituire nel frattempo la pagina di Megavideo.
+
+
+## FUNZIONI IMPLEMENTATE
+
+-- Caricamento dei file .avi, .mpg, .divx; con la corretta codifica in flv per lo streaming (Da migliorare)*
+
+-- Codifica del video in flv con la creazione dell'annessa thumbnail
+
+-- Download da Megavideo, questa funzione permette di scaricare i filmati su server passando soltanto l'url di megavideo.
+   Questa funzione non salta l'attesa di 70 Min.; infatti nel web server in cui è installato Wydo si usano dei cookie
+
+-- Lista dei file presenti sulla cartella di streaming, con thumbnail e link al video.
+
+-- Integrazione del video all'interno di un player flv fatto in flash (swf)
+
+* Controllo estensione file, peso, velocità
+
+
+## Note
+Momentaneamente non sarà rilasciato il codice sorgente. Prima che ciò avvenga devo aver installato tutte le funzione all'interno del framework Yii.
+
+Se invece volete testare il programma potete andare a questa pagina http://wydoo.no-ip.org
+vi prego soltanto di non fare test in upload con grossi file, e di limitare l'uso al minimo essenziale.
+
+Potete utilizzare la funzione Upload del video cliccando sul pulsante Select e invece nella casella di input potete inserire invece il vostro link megavideo.
